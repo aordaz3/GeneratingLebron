@@ -18,16 +18,19 @@ def predict_next_word(model, current_word):
         return random.choice(model[current_word])
     return "Word not found in training data."
 
-# Usage
-file_name = '/Users/aordaz3/CurProjects/LearningGit/lebron_quotes_cleaned.txt' 
+
+file_name = 'lebron_interview_quotes.txt' 
 markov_model = build_markov_model(file_name)
 seed = "I"
 
 ran = random.randint(0, 16)
 quote = seed
 for i in range(ran):
-    next_word = predict_next_word(markov_model, seed)
+    next_word = predict_next_word(markov_model, seed) 
     seed = next_word
     quote += " " + next_word
+
+    if next_word.endswith((".", "!", "?")):
+        break
 
 print(quote)
