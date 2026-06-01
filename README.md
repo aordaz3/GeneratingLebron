@@ -1,4 +1,4 @@
-## 🌟 LeBron Quote of the Day
+## 🌟 LeBron Quote of the Day - how does this effect his legacy?
 
 <!--QUOTE_START-->
 > I don't care about fourth um what happened tonight that happened meet you.
