@@ -1,9 +1,7 @@
 ## 🌟 LeBron Quote of the Day
 
 <!--QUOTE_START-->
-
-Quote will appear here
-
+> I don't care about fourth um what happened tonight that happened meet you.
 <!--QUOTE_END-->
 
 While LeBron may never have said that exact sentence, it is generated using patterns learned from his real quotes.

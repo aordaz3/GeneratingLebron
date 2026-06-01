@@ -10,6 +10,9 @@ import yt_dlp
 from youtube_transcript_api import YouTubeTranscriptApi
 
 
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+OUTPUTS_DIR = PROJECT_ROOT / "outputs"
+
 DEFAULT_QUERIES = [
     "LeBron James postgame interview full",
     "LeBron James press conference full interview",
@@ -296,6 +299,13 @@ def write_video_urls(path: Path, videos: list[Video]) -> None:
     path.write_text("\n".join(lines) + ("\n" if lines else ""), encoding="utf-8")
 
 
+def resolve_project_path(path_value: str) -> Path:
+    path = Path(path_value).expanduser()
+    if path.is_absolute():
+        return path
+    return PROJECT_ROOT / path
+
+
 def collect_lebron_quotes(
     queries: list[str],
     max_results_per_query: int,
@@ -342,8 +352,16 @@ def parse_args() -> argparse.Namespace:
         help="YouTube search query. Can be passed more than once.",
     )
     parser.add_argument("--max-results", type=int, default=8, help="Results to inspect per query.")
-    parser.add_argument("--output", default="lebron_interview_quotes.txt", help="Training text output file.")
-    parser.add_argument("--urls", default="lebron_interview_urls.txt", help="Video URL output file.")
+    parser.add_argument(
+        "--output",
+        default="outputs/lebron_interview_quotes.txt",
+        help="Training text output file.",
+    )
+    parser.add_argument(
+        "--urls",
+        default="outputs/lebron_interview_urls.txt",
+        help="Video URL output file.",
+    )
     parser.add_argument("--append", action="store_true", help="Append unique blocks to the output file.")
     parser.add_argument(
         "--loose-titles",
@@ -355,8 +373,8 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> None:
     args = parse_args()
-    output_path = Path(args.output)
-    urls_path = Path(args.urls)
+    output_path = resolve_project_path(args.output)
+    urls_path = resolve_project_path(args.urls)
     queries = args.queries or DEFAULT_QUERIES
 
     added_count = collect_lebron_quotes(
