@@ -33,4 +33,5 @@ for i in range(ran):
     if next_word.endswith((".", "!", "?")):
         break
 
-print(quote)
+with open("daily_quote.txt", "w", encoding="utf-8") as file:
+    file.write(quote)
