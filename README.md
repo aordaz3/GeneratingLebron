@@ -1,7 +1,7 @@
 ## 🌟 LeBron Quote of the Day - how does this effect his legacy?
 
 <!--QUOTE_START-->
-> I think it's draining critical three-pointers but it's something i know because i've done so why like that
+> I can get iman shumpert and fun with the last year back so hopefully you know he's still
 <!--QUOTE_END-->
 
 While LeBron may never have said that exact sentence, it is generated using patterns learned from his real quotes.
