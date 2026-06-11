@@ -1,7 +1,7 @@
 ## 🌟 LeBron Quote of the Day - how does this effect his legacy?
 
 <!--QUOTE_START-->
-> I can get iman shumpert and fun with the last year back so hopefully you know he's still
+> I just all these guys know like i don't perform well so much of hard to lead lead
 <!--QUOTE_END-->
 
 While LeBron may never have said that exact sentence, it is generated using patterns learned from his real quotes.
