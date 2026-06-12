@@ -1,7 +1,7 @@
 ## 🌟 LeBron Quote of the Day - how does this effect his legacy?
 
 <!--QUOTE_START-->
-> I just all these guys know like i don't perform well so much of hard to lead lead
+> I really good job of having a little longer are losing to win now and you know and
 <!--QUOTE_END-->
 
 While LeBron may never have said that exact sentence, it is generated using patterns learned from his real quotes.
