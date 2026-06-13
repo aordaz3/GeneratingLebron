@@ -1,7 +1,7 @@
 ## 🌟 LeBron Quote of the Day - how does this effect his legacy?
 
 <!--QUOTE_START-->
-> I really good job of having a little longer are losing to win now and you know and
+> I came back into you know your decision was gone through the day as a few minutes we
 <!--QUOTE_END-->
 
 While LeBron may never have said that exact sentence, it is generated using patterns learned from his real quotes.
