@@ -1,7 +1,7 @@
 ## 🌟 LeBron Quote of the Day - how does this effect his legacy?
 
 <!--QUOTE_START-->
-> I came back into you know your decision was gone through the day as a few minutes we
+> I say i got sergeant hill griffin why like i said that nature.
 <!--QUOTE_END-->
 
 While LeBron may never have said that exact sentence, it is generated using patterns learned from his real quotes.
