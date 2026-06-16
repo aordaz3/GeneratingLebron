@@ -1,32 +1,32 @@
-name: Daily LeBron Quote
+# name: Daily LeBron Quote
 
-on:
-  schedule:
-    - cron: "0 12 * * *"
-  workflow_dispatch:
+# on:
+#   schedule:
+#     - cron: "0 12 * * *"
+#   workflow_dispatch:
 
-permissions:
-  contents: write
+# permissions:
+#   contents: write
 
-jobs:
-  update-quote:
-    runs-on: ubuntu-latest
+# jobs:
+#   update-quote:
+#     runs-on: ubuntu-latest
 
-    steps:
-      - uses: actions/checkout@v4
+#     steps:
+#       - uses: actions/checkout@v4
 
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
+#       - uses: actions/setup-python@v5
+#         with:
+#           python-version: '3.11'
 
-      - run: python code/learning_lebron.py
-      - run: python code/update_readme.py
+#       - run: python code/learning_lebron.py
+#       - run: python code/update_readme.py
 
-      - name: Commit changes
-        run: |
-          git config user.name "aordaz3"
-          git config user.email "alejandro.r.ordaz@gmail.com"
-          git add README.md outputs/daily_quote.txt
-          git diff --cached --quiet && exit 0
-          git commit -m "Daily LeBron quote"
-          git push
+#       - name: Commit changes
+#         run: |
+#           git config user.name "aordaz3"
+#           git config user.email "alejandro.r.ordaz@gmail.com"
+#           git add README.md outputs/daily_quote.txt
+#           git diff --cached --quiet && exit 0
+#           git commit -m "Daily LeBron quote"
+#           git push
