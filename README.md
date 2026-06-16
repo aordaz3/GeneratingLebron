@@ -1,7 +1,7 @@
 ## 🌟 LeBron Quote of the Day - how does this effect his legacy?
 
 <!--QUOTE_START-->
-> I don't think this ain't the team to it a you fail um i my family members in
+> I will be successful you know, hopefully you guys asked him he'd come down to get an nba
 <!--QUOTE_END-->
 
 While LeBron may never have said that exact sentence, it is generated using patterns learned from his real quotes.
